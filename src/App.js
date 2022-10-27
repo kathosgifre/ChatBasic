@@ -41,12 +41,12 @@ function App() {
           value={message}
           className="border-2 border-zinc-500 p2 text-black"
         />
-        <button className="bg-blue-500"> Send </button>
+        <button className="bg-purple-500 text-white font-bold"> Send </button>
         <ul className="h-80 overflow-y-auto">
         {messages.map((message, index) => (
           <li 
           key={index} 
-          className={`my-2 p-2 tabletext-sm text-white rounded-md ${message.from === "Me" ? "bg-sky-700 ml-auto" : "bg-black"}`}
+          className={`my-2 p-2 tabletext-sm text-white rounded-md ${message.from === "Me" ? "bg-purple-700 ml-auto" : "bg-black"}`}
           >
             <p>
               {message.from}: {message.body}
